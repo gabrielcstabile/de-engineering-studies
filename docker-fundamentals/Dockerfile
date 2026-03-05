@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.12-slim
 RUN pip install uv
 COPY pyproject.toml uv.lock /src/
 WORKDIR /src
